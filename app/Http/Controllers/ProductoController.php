@@ -13,7 +13,16 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        //
+        return view('productos.index');
+    }
+
+
+     /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Producto $producto)
+    {
+        return view('productos.edit');
     }
 
     /**
@@ -21,8 +30,14 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        //
+        return view('productos.create');
     }
+
+
+
+
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -40,13 +55,7 @@ class ProductoController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Producto $producto)
-    {
-        //
-    }
+   
 
     /**
      * Update the specified resource in storage.
